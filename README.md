@@ -30,5 +30,8 @@ cpk build -a ${ARCH}
 ## Run
 
 ```bash
+# use the RealSense camera in the local ROS network
 cpk run -a ${ARCH} --net host -- --privileged
+# use the RealSense camera in the Baxter's ROS network
+cpk run -a ${ARCH} -L baxter --net host -- --privileged
 ```
