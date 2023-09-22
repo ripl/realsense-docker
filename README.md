@@ -16,6 +16,6 @@ cpk build
 cpk run --net host -- --privileged
 # use the RealSense camera in the Baxter's ROS network
 cpk run -L baxter --net host -- --privileged
-# use the RealSense camera in low resolution mode in the Baxter's ROS network
-cpk run -L baxter_low_res --net host -- --privileged
+# use the RealSense camera in the Baxter's ROS network on the backpack in low resolution mode 
+cpk run -H backpack -L backpack --net host -- --privileged
 ```
